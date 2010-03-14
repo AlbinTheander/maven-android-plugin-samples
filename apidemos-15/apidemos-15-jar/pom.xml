@@ -22,17 +22,11 @@
         <version>2.3.3-SNAPSHOT</version>
     </parent>
     <groupId>com.jayway.maven.plugins.android.generation2.samples.apidemos-15</groupId>
-    <artifactId>apidemos-15-app</artifactId>
-    <packaging>apk</packaging>
-    <name>Maven Android Plugin - samples - Android SDK 1.5 ApiDemos - App</name>
+    <artifactId>apidemos-15-jar</artifactId>
+    <packaging>jar</packaging>
+    <name>Maven Android Plugin - samples - Android SDK 1.5 ApiDemos - Jar</name>
 
     <dependencies>
-        <dependency>
-            <groupId>com.jayway.maven.plugins.android.generation2.samples.apidemos-15</groupId>
-            <artifactId>apidemos-15-jar</artifactId>
-            <version>2.3.3-SNAPSHOT</version>
-        </dependency>
-
         <dependency>
             <groupId>android</groupId>
             <artifactId>android</artifactId>
@@ -45,22 +39,9 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    
+
     <build>
-        <!--<finalName>${artifactId}</finalName>-->
         <plugins>
-            <plugin>
-                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-                <artifactId>maven-android-plugin</artifactId>
-                <configuration>
-                    <sdk>
-                        <path>${env.ANDROID_HOME}</path>
-                        <platform>1.5</platform>
-                    </sdk>
-                    <deleteConflictingFiles>true</deleteConflictingFiles>
-                </configuration>
-                <extensions>true</extensions>
-            </plugin>
 
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>

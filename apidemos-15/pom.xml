@@ -36,6 +36,7 @@
         </dependencies>
     </dependencyManagement>
     <modules>
+		<module>apidemos-15-jar</module>
 		<module>apidemos-15-app</module>
 		<module>apidemos-15-instrumentationtest</module>
 	</modules>
