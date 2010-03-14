@@ -24,7 +24,6 @@
 
     <modules>
         <module>apidemos-15</module>
-        <module>helloflashlight</module>
     </modules>
 
     <url>http://code.google.com/p/maven-android-plugin</url>
